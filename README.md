@@ -18,7 +18,7 @@
 
 ```shell
 $> cd ~
-$> git clone https://github.com/Trumeet/Dotfiles.git
+$> git clone --recurse-submodules https://github.com/Trumeet/Dotfiles.git
 $> cd Dotfiles
 ```
 
