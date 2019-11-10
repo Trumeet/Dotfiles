@@ -11,6 +11,7 @@
 * IDE: Android Studio and / or IntelliJ Idea
 * Desktop: KDE
 * Input: iBus + Rime (Chinese, Luna Pinyin Simp + Jyutping)
+* SSH Agent: GnuPG
 
 ## Setup
 
@@ -32,6 +33,7 @@ $> stow nvim
 # You will see an error after executing this. Just ignore it and restart NeoVim.
 $> nvim -c "PlugInstall"
 $> stow rime
+$> stow ssh-agent
 ```
 
 3. Enjoy
@@ -40,7 +42,7 @@ Wait... you are **NOT** supposed to enjoy it because they are my **PERSONAL** co
 
 # Acknowledgements
 
-Other users' dotfile repos, StackOverflow, Google, GitHub, etc.
+Other users' dotfile repos, StackOverflow, Google, GitHub, Arch Wiki, etc.
 
 # License
 
