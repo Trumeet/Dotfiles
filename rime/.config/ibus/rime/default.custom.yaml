@@ -1,0 +1,13 @@
+patch:
+    menu/page_size: 9
+    schema_list:
+        - schema: luna_pinyin_simp
+        - schema: jyutping
+    switcher:
+        caption: "切换模式"
+        hotkeys:
+            - F4
+        save_options:
+            - extended_charset
+        fold_options: true
+        option_list_separator: ' / '

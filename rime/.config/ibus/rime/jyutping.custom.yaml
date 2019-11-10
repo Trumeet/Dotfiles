@@ -1,0 +1,8 @@
+patch:
+    switches:
+        - name: ascii_mode
+          reset: 1
+          states: [ 中文, 英文 ]
+        - name: simplification
+          reset: 1
+          states: [ 繁体, 简体 ]
