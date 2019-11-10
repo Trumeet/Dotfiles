@@ -15,10 +15,9 @@
 
 ## Setup
 
-1. Clone the repo to your `$HOME`
+1. Clone the repo
 
 ```shell
-$> cd ~
 $> git clone --recurse-submodules https://github.com/Trumeet/Dotfiles.git
 $> cd Dotfiles
 ```
@@ -28,17 +27,28 @@ $> cd Dotfiles
 Boooooom. The magic happens.
 
 ```shell
-$> stow fish
-$> stow nvim
-# You will see an error after executing this. Just ignore it and restart NeoVim.
-$> nvim -c "PlugInstall"
-$> stow rime
-$> stow ssh-agent
+$> find . -maxdepth 1 -not -path '*/\.*' -wholename "./*" -type d | sed "s|^\./||" | xargs stow -v -t $HOME -R
 ```
 
-3. Enjoy
+3. Additional config
+
+NeoVim:
+
+You will see an error after executing this. Just ignore it and restart NeoVim.
+```
+$> nvim -c "PlugInstall"
+```
+
+Tmux:
+
+* `tmux`
+* Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall)
+
+4. Enjoy
 
 Wait... you are **NOT** supposed to enjoy it because they are my **PERSONAL** configurations, which are **NOT** supposed to fit in your environment and habit.
+
+Anyway, you can still use my configurations. 😂
 
 # Acknowledgements
 
