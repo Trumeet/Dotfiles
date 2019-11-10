@@ -1,0 +1,6 @@
+[user]
+	email = 17158086+Trumeet@users.noreply.github.com
+	name = Trumeet
+	signingkey = CE99BB92E87D12A1
+[commit]
+	gpgsign = true
