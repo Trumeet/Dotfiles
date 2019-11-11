@@ -18,8 +18,8 @@
 1. Clone the repo
 
 ```shell
-$> git clone --recurse-submodules https://github.com/Trumeet/Dotfiles.git
-$> cd Dotfiles
+$ git clone --recurse-submodules https://github.com/Trumeet/Dotfiles.git
+$ cd Dotfiles
 ```
 
 2. Install
@@ -27,7 +27,7 @@ $> cd Dotfiles
 Boooooom. The magic happens.
 
 ```shell
-$> find . -maxdepth 1 -not -path '*/\.*' -wholename "./*" -type d | sed "s|^\./||" | xargs stow -v -t $HOME -R
+$ find . -maxdepth 1 -not -path '*/\.*' -wholename "./*" -type d | sed "s|^\./||" | xargs stow -v -t $HOME -R
 ```
 
 3. Additional config
@@ -35,14 +35,15 @@ $> find . -maxdepth 1 -not -path '*/\.*' -wholename "./*" -type d | sed "s|^\./|
 NeoVim:
 
 You will see an error after executing this. Just ignore it and restart NeoVim.
-```
-$> nvim -c "PlugInstall"
+
+```shell
+$ nvim -c "PlugInstall"
 ```
 
 Tmux:
 
 * `tmux`
-* Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall)
+* Press <kbd>Ctrl</kbd> + <kbd>A</kbd>, **release the keys** and press <kbd>I</kbd> (capital i, as in **I**nstall)
 
 4. Enjoy
 
