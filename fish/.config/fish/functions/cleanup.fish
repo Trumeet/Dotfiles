@@ -1,7 +1,8 @@
 function cleanup --description "Remove unused dependencies"
-    if test -n (pacman -Qttdq)
-        echo "Nothing to do here."
+    set PKGS (pacman -Qttdq)
+    if test -n "$PKGS"
+        sudo pacman -Rn $PKGS
     else
-        sudo pacman -Rn (pacman -Qttdq)
+        echo "Nothing to do here."
     end
 end
