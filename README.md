@@ -45,6 +45,12 @@ Tmux:
 * `tmux`
 * Press <kbd>Ctrl</kbd> + <kbd>A</kbd>, **release the keys** and press <kbd>I</kbd> (capital i, as in **I**nstall)
 
+Pacman Packages:
+
+```shell
+$ yay -S (cat packages)
+```
+
 4. Enjoy
 
 Wait... you are **NOT** supposed to enjoy it because they are my **PERSONAL** configurations, which are **NOT** supposed to fit in your environment and habit.
