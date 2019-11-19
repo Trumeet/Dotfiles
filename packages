@@ -1,7 +1,7 @@
 android-studio-canary
 android-tools
 archlinuxcn-keyring
-azure-functions-core-tools-bin
+ark
 base
 binutils
 bluedevil
@@ -9,6 +9,7 @@ breeze-blurred-git
 breeze-gtk
 capitaine-cursors
 chromium
+croc-bin
 dnscrypt-proxy
 drkonqi
 efibootmgr
@@ -38,14 +39,11 @@ ktimer
 kwallet-pam
 kwalletmanager
 kwayland-integration
-latte-dock
 libappindicator-gtk3
 libconfig
 linux-firmware
 linux-headers
-m4
 make
-maven
 mcmojave-circle-icon-theme-git
 ncdu
 neovim
@@ -62,7 +60,6 @@ plasma-nm
 plasma-pa
 plasma-vault
 powerdevil
-python-azure-cli
 restrict-dmesg
 restrict-kptr
 sbsigntools
@@ -84,6 +81,6 @@ x-touch-touchpad
 xdg-desktop-portal-kde
 xf86-video-fbdev
 xf86-video-intel
-xorg-server-xephyr
 xorg-xhost
 yay
+zip
