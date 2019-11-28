@@ -1,4 +1,5 @@
 function fish_prompt --description 'Write out the prompt'
+    set -l last_status $status
 	set -l color_cwd
     set -l suffix
     switch "$USER"
@@ -14,5 +15,5 @@ function fish_prompt --description 'Write out the prompt'
             set suffix '>'
     end
 
-    echo -n -s (set_color $color_cwd) (prompt_pwd) (set_color normal) "$suffix "
+    echo -n -s (set_color $color_cwd) $last_status " " (prompt_pwd) (set_color normal) "$suffix "
 end
