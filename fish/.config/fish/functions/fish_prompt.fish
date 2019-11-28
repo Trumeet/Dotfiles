@@ -11,7 +11,11 @@ function fish_prompt --description 'Write out the prompt'
             end
             set suffix '#'
         case '*'
-            set color_cwd $fish_color_cwd
+            if [ $last_status != 0 ]
+                set color_cwd red
+            else
+                set color_cwd $fish_color_cwd
+            end
             set suffix '>'
     end
 
