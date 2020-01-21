@@ -23,6 +23,7 @@ battery all {
         status_full = ""
         status_bat = ""
         status_chr = ""
+        status_chr = ""
         integer_battery_capacity = true
 }
 
