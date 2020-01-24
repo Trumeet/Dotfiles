@@ -1,3 +1,5 @@
+# Thanks to https://bitbucket.org/szclsya/dotfiles/src/master/i3/
+
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
