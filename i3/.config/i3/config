@@ -154,3 +154,7 @@ bindsym $mod+x [urgent=latest] focus
 
 # Autostart programs
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
+
+# Wallpaper
+exec feh --randomize --bg-scale ~/Pictures/Wallpapers/*
+bindsym $mod+Shift+w exec  feh --randomize --bg-scale ~/Pictures/Wallpapers/*
