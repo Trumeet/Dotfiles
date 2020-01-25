@@ -154,6 +154,9 @@ exec --no-startup-id compton -C --no-fading-openclose
 # https://wiki.archlinux.org/index.php/I3#Colorschemes
 bindsym $mod+x [urgent=latest] focus
 
+# Barrier
+exec --no-startup-id flock -n "/tmp/barrier.lck" -c /usr/bin/barrier
+
 # Autostart programs
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 
