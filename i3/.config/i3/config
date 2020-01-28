@@ -11,8 +11,7 @@ font pango:monospace 8
 #font pango:DejaVu Sans Mono 8
 
 # Screen lock
-exec --no-startup-id xss-lock --transfer-sleep-lock -- lxdm -c USER_SWITCH --nofork
-bindsym Mod4+l exec loginctl lock-session
+bindsym Mod4+l exec xsecurelock
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
