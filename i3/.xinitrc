@@ -37,4 +37,4 @@ fi
 # Why .xprofile is not called?
 xrandr --dpi 144
 
-exec i3-with-shmlog
+exec i3
