@@ -160,5 +160,7 @@ exec --no-startup-id flock -n "/tmp/barrier.lck" -c /usr/bin/barrier
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 
 # Wallpaper
-exec feh --randomize --bg-scale ~/Pictures/Wallpapers/*
+# without --no-startup-id will make cursor remain in waiting mode. 
+# This only appears with startx rather tha lxdm
+exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
 bindsym $mod+Shift+w exec  feh --randomize --bg-scale ~/Pictures/Wallpapers/*
