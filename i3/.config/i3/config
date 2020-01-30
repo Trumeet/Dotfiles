@@ -11,7 +11,7 @@ font pango:monospace 8
 #font pango:DejaVu Sans Mono 8
 
 # Screen lock
-bindsym Mod4+l exec xsecurelock
+bindsym Mod4+l exec bash -c "env XSECURELOCK_PASSWORD_PROMPT=asterisks xsecurelock"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
