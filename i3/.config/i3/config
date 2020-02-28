@@ -165,4 +165,4 @@ exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 # without --no-startup-id will make cursor remain in waiting mode. 
 # This only appears with startx rather tha lxdm
 exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
-bindsym $mod+Shift+w exec  feh --randomize --bg-scale ~/Pictures/Wallpapers/*
+bindsym $mod+Shift+w exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
